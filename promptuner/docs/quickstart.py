@@ -1,5 +1,6 @@
 from promptuner import promptuner, Prompt
-import os, json
+import os
+import json
 from pathlib import Path
 
 __current__ = Path(os.path.dirname(__file__))
@@ -23,7 +24,7 @@ print(prompt.content)
 # Execute prompt    
 print(prompt.replace_variables({"PASSAGE": SAMPLE_PASSAGE}))
 result = prompt(
-    model_name = "anthropic/claude-3-5-sonnet-20240620", 
+    model_name = "anthropic/claude-3-5-sonnet-20241022", 
     variable_values = {"PASSAGE": SAMPLE_PASSAGE}, 
     answer_tag = "result", json_response = True
 )
