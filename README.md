@@ -17,12 +17,11 @@
 To install promptuner, use pip:
 
 ```bash
-pip install git+https://github.com/unclecode/promptuner.git
+poetry shell
+poetry install
 ```
 
 ### Usage
-
-You may try this Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1kqy0QonMu7l40lJwMzsu5i9ItthlI_FW#scrollTo=HsJ-D4_5raT6)
 
 Here's a basic example of how to use promptuner. First make sure to set your Anthropic Api Key in the environment variable `ANTHROPIC_API_KEY`.
 ```
