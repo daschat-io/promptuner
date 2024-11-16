@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "promptuner"
+version = "0.1.0"
+description = "Turning small task descriptions into mega prompts automatically"
+authors = ["abner G Jacobsen <abner@apoana.com.br>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.5"
+pydantic = "^2.9.2"
+python-dotenv = "^1.0.1"
+uvicorn = "^0.32.0"
+anthropic = "^0.39.0"
+litellm = "^1.52.9"
+openai = "^1.54.4"
+prompter = "^0.3.10"
+
+
+[tool.poetry.scripts]
+promptuner = "promptuner.__main__:main"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.7.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
